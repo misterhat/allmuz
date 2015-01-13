@@ -1,6 +1,6 @@
 {
   "name": "allmuz",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Search, stream and download MP3s from Allmuz.",
   "main": "index.js",
   "keywords": [
@@ -15,7 +15,10 @@
     "lazystream": "^0.1.0",
     "needle": "^0.7.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "is-mp3": "^1.0.0",
+    "tap": "^0.4.13"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/misterhat/allmuz.git"
@@ -23,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/misterhat/allmuz/issues"
   },
-  "homepage": "https://github.com/misterhat/allmuz"
+  "homepage": "https://github.com/misterhat/allmuz",
+  "scripts": {
+    "test": "node test.js"
+  }
 }
